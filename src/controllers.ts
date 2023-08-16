@@ -1,21 +1,22 @@
-const service = require('./services.js')
+import { Request, Response } from 'express'
+import service from './services'
 
-module.exports = class Controller {
-  static async getBooks (_, res) {
+export default class Controller {
+  static async getBooks (_: Request, res: Response) {
     const books = await service.getBooks()
     res.json(books)
   }
-  static async getAuthors (_, res) {
+  static async getAuthors (_: Request, res: Response) {
     const authors = await service.getAuthors()
     res.json(authors)
   }
-  static async getBooksById (req, res) {
+  static async getBooksById (req: Request, res: Response) {
     const { id } = req.params
     const book_id = +id
     const books = await service.getBooksById(book_id)
     res.json(books)
   }
-  static async getBooksByAuthorId (req, res) {
+  static async getBooksByAuthorId (req: Request, res: Response) {
     const { id } = req.params
     const author_id = +id
     const books = await service.getBooksByAuthorId(author_id)

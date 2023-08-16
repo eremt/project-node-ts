@@ -10,8 +10,8 @@ COPY . .
 
 FROM base as production
 
-# RUN npm run build
+RUN npm run build
 
 EXPOSE 5000
 
-CMD [ "node", "index.js" ]
+CMD [ "node", "dist/index.js" ]
