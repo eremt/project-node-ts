@@ -15,6 +15,11 @@ Clone the repository:
 git clone https://github.com/eremt/project-node-ts.git
 ```
 
+Copy `.env.example` to create `.env`:
+```
+cp .env.example .env
+```
+
 Start the development environment with `nodemon` watching for changes:
 ```
 docker-compose up
