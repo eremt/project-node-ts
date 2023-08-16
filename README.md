@@ -4,7 +4,7 @@ Simple TypeScript starter project.
 ## Features
 - `docker` and `docker-compose`
 - `jest`
-- `sqlite3`: [`feat/sqlite3`](https://github.com/eremt/project-node-ts/tree/feat/sqlite3)
+- `sqlite3`
 
 ## Documentation
 
@@ -48,6 +48,7 @@ The following endpoints exist:
 `GET /books/id/:book_id`: List books by `book_id`
 
 `GET /books/author/:author_id`: List books by `author_id`
+
 ```
 [
   {
@@ -60,3 +61,8 @@ The following endpoints exist:
 ```
 
 ### Troubleshooting
+
+With the `npm` `--ignore-scripts` option `sqlite3` doesn't build, to fix it run:
+```
+npm explore sqlite3 && npm run install
+```
