@@ -4,6 +4,7 @@ Simple TypeScript starter project.
 ## Features
 - `docker` and `docker-compose`
 - `jest`
+- `sqlite3`: [`feat/sqlite3`](https://github.com/eremt/project-node-ts/tree/feat/sqlite3)
 
 ## Documentation
 
@@ -57,3 +58,5 @@ The following endpoints exist:
   ...
 ]
 ```
+
+### Troubleshooting
