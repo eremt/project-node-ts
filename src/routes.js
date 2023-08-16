@@ -9,6 +9,12 @@ router.use((req, _, next) => {
   next()
 })
 
+const controller = require('./controllers')
+router.get('/books', controller.getBooks)
+router.get('/authors', controller.getAuthors)
+router.get('/books/id/:id', controller.getBooksById)
+router.get('/books/author/:id', controller.getBooksByAuthorId)
+
 router.get('/health-check', (_, res) => {
   // health check
   res.json(json_success)

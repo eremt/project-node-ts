@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "title": "1984",
+    "author_id": 0
+  },
+  {
+    "id": 1,
+    "title": "Animal farm",
+    "author_id": 0
+  },
+  {
+    "id": 2,
+    "title": "Moby dick",
+    "author_id": 1
+  }
+]
