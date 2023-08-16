@@ -3,6 +3,7 @@ Simple TypeScript starter project.
 
 ## Features
 - `docker` and `docker-compose`
+- `jest`
 
 ## Documentation
 
@@ -13,9 +14,14 @@ Clone the repository:
 git clone https://github.com/eremt/project-node-ts.git
 ```
 
-Start the development environment:
+Start the development environment with `nodemon` watching for changes:
 ```
 docker-compose up
+```
+
+Run tests:
+```
+npm run test
 ```
 
 ### API
